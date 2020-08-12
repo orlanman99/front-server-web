@@ -1,7 +1,7 @@
 import { AppPage } from './app.po';
-import { browser, logging } from 'protractor';
+import { browser, logging, by, element  } from 'protractor';
 
-describe('workspace-project App', () => {
+fdescribe('workspace-project App', () => {
   let page: AppPage;
 
   beforeEach(() => {
@@ -10,6 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
+    //browser.pause();
     expect(page.getTitleText()).toEqual('client app is running!');
   });
 
